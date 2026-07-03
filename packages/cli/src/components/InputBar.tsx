@@ -1,3 +1,4 @@
+import { CommandMenu } from "./commands-menu";
 import { StatusBar } from "./StatusBar";
 import type { KeyBinding } from "@opentui/core";
 
@@ -48,6 +49,20 @@ export function InputBar({ onSubmit, disabled = false }: Props) {
             width={"100%"}
             gap={1}
             >
+                {/* {
+                    true && (
+                        <box
+                        position="absolute"
+                        left={0}
+                        bottom={"100%"}
+                        width={"100%"}
+                        backgroundColor={"#1A1A24"}
+                        zIndex={10}
+                        >
+                           <CommandMenu query=""/>
+                        </box>
+                    )
+                } */}
             <textarea 
                 focused={!disabled}
                 placeholder={"Ask Litecode anything..., ex. Fix a bug in the databased"}
